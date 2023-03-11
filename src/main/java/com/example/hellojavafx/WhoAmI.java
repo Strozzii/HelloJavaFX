@@ -76,6 +76,7 @@ public class WhoAmI extends Application {
         Button button_output = new Button("Anzeigen");
         vbox_output.getChildren().add(button_output);
 
+
         //Sixth element
         Label l1 = new Label();
         Label l2 = new Label();
@@ -119,7 +120,7 @@ public class WhoAmI extends Application {
                 }
 
                 StringJoiner joiner = new StringJoiner(delimiter);
-                hobbyList.forEach(item -> joiner.add(item));
+                hobbyList.forEach(joiner::add);
 
                 if(hobbyList.size() == 1){
                     hobbys = "Mein Hobby ist " + joiner.toString() + ".";
