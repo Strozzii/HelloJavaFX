@@ -132,7 +132,7 @@ public class Aufgabe1 extends Application {
         main_vbox.setPadding(new Insets(15));
 
         //Scene
-        Scene scene = new Scene(main_vbox ,320, 420);
+        Scene scene = new Scene(main_vbox, 320, 420);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Wer bin ich?");
         primaryStage.setResizable(false);
