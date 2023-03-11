@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
@@ -32,6 +33,7 @@ public class WhoAmI extends Application {
         hbox1.getChildren().add(whoami);
         TextField txt1 = new TextField();
         hbox1.getChildren().add(txt1);
+        hbox1.setAlignment(Pos.CENTER_LEFT);
 
         //Second element
         HBox hbox2 = new HBox(15);
